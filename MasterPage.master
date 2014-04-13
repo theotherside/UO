@@ -1,0 +1,90 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head runat="server">
+    <title>CVTC Club Regirstration</title>
+    
+    <!--CSS ==================================================== -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+    <div class="container">
+    
+        <div class="four columns">
+            <div class="layout_row1">
+                <asp:Image ID="imgLogo" runat="server" AlternateText="CVTC" ImageUrl="~/images/cvtc_logo.jpg" />
+            </div>
+        </div>
+
+        <div class="twelve columns">
+            <div class="page_header">
+                COLLEGE CLUBS
+            </div>
+        </div>
+
+        <div class="four columns">
+            <div class="layout_row2">
+                Register:
+                &nbsp;
+                <asp:Button ID="btnSignUp" runat="server" Text="Sign Up" />
+            </div>
+        </div>
+
+        <div class="twelve columns">
+            <div class="sitemap_path">
+                <asp:SiteMapPath ID="smpBreadCrumbs" runat="server" Font-Names="Verdana" 
+                Font-Size="0.8em" PathSeparator=" : ">
+                <CurrentNodeStyle Font-Bold="true" ForeColor="red" />
+                <NodeStyle Font-Bold="False" ForeColor="red" />
+                <PathSeparatorStyle Font-Bold="False" ForeColor="red" />
+                <RootNodeStyle Font-Bold="False" ForeColor="red" />
+            </asp:SiteMapPath>
+            </div>
+        </div>
+
+        <div class="four columns">
+            <div class="navigation">
+                <asp:TreeView ID="navTreeView" runat="server" DataSourceID="smdNavigation" 
+                    ImageSet="Contacts" NodeIndent="10">
+                    <HoverNodeStyle Font-Underline="False" />
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Red" 
+                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                    <ParentNodeStyle Font-Bold="True" ForeColor="Red" />
+                    <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" />
+                </asp:TreeView>
+            </div>
+        </div>
+
+        <div class="twelve columns">
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+       
+       <div class="sixteen columns">
+                Registered Clubs:
+                <br />
+                <asp:Button ID="btnClub" runat="server" Text="ITPA" />
+       </div>
+
+                 
+    </div>
+    <asp:SiteMapDataSource ID="smdNavigation" runat="server" />
+    </form>
+
+</body>
+
+</html>

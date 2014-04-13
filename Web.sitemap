@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+    <siteMapNode url="~/Default.aspx" title="College Clubs"  description="">
+
+      <siteMapNode url="~/MembershipHome.aspx" title="Membership Home"  description="">
+        <siteMapNode url="~/Membership/MembershipSignup.aspx" title="Membership Sign Up"  description="" />
+      </siteMapNode>
+
+
+      <siteMapNode url="~/ResourcesHome.aspx" title="Resources Home"  description="">
+        <siteMapNode url="~/Resources/ResourcesExternalLinks.aspx" title="Resource External Links"  description="" />
+      </siteMapNode>
+
+    
+    </siteMapNode>
+</siteMap>

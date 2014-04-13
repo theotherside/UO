@@ -1,0 +1,46 @@
+﻿body 
+{
+    background-color: white;
+    color: Red;
+    margin: auto;
+    font-family: Sans-Serif;
+}
+
+.layout_row1
+{
+    min-height: 90px;
+}
+
+.page_header
+{
+    min-height: 90px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.layout_row2
+{
+    min-height: 30px;
+    padding-top: 4px;
+}
+
+.sitemap_path
+{
+    min-height: 30px;
+    padding-top: 4px;
+}
+
+.navigation
+{
+    min-height: 300px;
+    padding-top: 150px;
+}
+
+.content
+{
+    min-height: 450px;
+    font-size: large;
+}
+
+
+
